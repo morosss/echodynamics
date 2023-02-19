@@ -1,34 +1,29 @@
 <html lang="en">
 
-
 <title>Echodynamics</title>
+
+<head>
+  <link rel="icon" type="image/png" href="favicon-32x32.png">
+</head>
 
 <style>
 
-<link rel="icon" type="image/x-icon" href="https://github.com/morosss/echodynamics/blob/13082f4fba2766981300d98c87fdf04b0d36da52/favicon.ico">
-
-.iframe-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 0;
-  overflow: hidden;
-  padding-top: 60%; /* 16:9 aspect ratio */
-  padding-left: 10%;
-  padding-right: 10%;
+iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.iframe-container iframe {
-  position: absolute;
-  margin: 0 auto;
-  display: block;
-  top: 0;
-  left: 0;
+  iframe {
   width: 100%;
   height: 100%;
-  max-width: 800px;
-
 }
+
+@media (min-width: 768px) {
+  iframe {
+    width: 500px;
+    height: 760px;
 
 </style>
 
